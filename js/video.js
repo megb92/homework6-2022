@@ -44,7 +44,7 @@ document.querySelector("#skip").addEventListener("click", function() {
 	}
 });
 
-document.querySelector("#mute").addEventListener("click", function() {
-	console.log("Mute");
-	video.
-});
+// document.querySelector("#mute").addEventListener("click", function() {
+// 	console.log("Mute");
+// 	video.
+// });
