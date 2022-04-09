@@ -44,7 +44,17 @@ document.querySelector("#skip").addEventListener("click", function() {
 	}
 });
 
-// document.querySelector("#mute").addEventListener("click", function() {
-// 	console.log("Mute");
-// 	video.
-// });
+document.querySelector("#mute").addEventListener("click", function () {
+	console.log("Mute Button");
+	if (video.muted == false) {
+		document.querySelector("#mute").innerHTML = "Unmute"
+		video.muted = true
+	}
+	else {
+		video.muted = false
+	}
+})
+
+document.querySelector("#slider").addEventListener("change", function () {
+	video.volume = value / 100;
+})
